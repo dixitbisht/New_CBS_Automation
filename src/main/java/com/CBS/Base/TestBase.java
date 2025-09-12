@@ -45,7 +45,7 @@ catch (Exception e) {
 //            }
 
         try {
-            Path tempProfileDir = Files.createTempDirectory("chrome-profile");
+            Path tempProfileDir = Files.createTempDirectory("chrome-profile-");
             options.addArguments("--user-data-dir=" + tempProfileDir.toString());
         } catch (IOException e) {
             throw new RuntimeException(e);
