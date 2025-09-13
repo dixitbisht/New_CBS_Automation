@@ -1,12 +1,8 @@
 package com.CBS.Base;
 
 import com.CBS.Util.TestUtil;
-import org.apache.commons.exec.CommandLine;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.http.Route;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -60,6 +56,7 @@ catch (Exception e) {
         driver.manage().timeouts().pageLoadTimeout(TestUtil.Page_Load_timeout, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(TestUtil.implicitwait, TimeUnit.SECONDS);
         driver.get(prop.getProperty("url"));
+        //System.out.println
 
 
 
