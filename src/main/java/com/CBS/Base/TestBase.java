@@ -54,7 +54,6 @@ catch (Exception e) {
         // Recommended for Jenkins/Linux
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
-        ///options.addArguments("--headless=new");
         driver = new ChromeDriver(options);
     }
         driver.manage().window().maximize();
